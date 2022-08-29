@@ -72,3 +72,9 @@ function between(a, b) {
     if (typeof a !== 'string' && typeof b !== 'string') return 'number';
     else return 'string';
   }
+
+
+  function otherAngle(a, b) {
+    const c = 180 - (a + b);
+    return c;
+  }
