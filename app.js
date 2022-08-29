@@ -40,3 +40,28 @@ function between(a, b) {
   }
   
   howManyEvenNumbers(56465456)
+
+
+  function century(year) {
+    let x = year / 100;
+    
+    return Math.ceil(x);
+  }
+  
+  console.log(century(89))
+
+
+  function arrayPlusArray(arr1, arr2) {
+    let a  = 0;
+    let b = 0;
+    
+    for (let i = 0; i < arr1.length; i++) {
+      a += arr1[i];
+    }
+     for (let j = 0; j < arr2.length; j++) {
+      b += arr2[j];
+    }
+    return a + b;
+  }
+  
+  console.log(arrayPlusArray(arr1, arr2))
