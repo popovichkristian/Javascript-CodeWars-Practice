@@ -65,3 +65,10 @@ function between(a, b) {
   }
   
   console.log(arrayPlusArray(arr1, arr2))
+
+
+
+  function typeOfSum(a, b) {
+    if (typeof a !== 'string' && typeof b !== 'string') return 'number';
+    else return 'string';
+  }
