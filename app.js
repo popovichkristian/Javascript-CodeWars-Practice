@@ -27,3 +27,16 @@ function between(a, b) {
     arr.push(humanYears, cy, dy);
     return arr;
   }
+
+  function howManyEvenNumbers(num) {
+    let count = 0;
+    const arr = ('' + num).split('').map(Number);
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i] % 2 === 0) {
+        count++;
+      }
+    }
+      return count;
+  }
+  
+  howManyEvenNumbers(56465456)
