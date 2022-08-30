@@ -114,3 +114,26 @@ function between(a, b) {
     
     return a;
   }
+
+
+  function findUniq(arr) {
+    for (let i = 1; i < arr.length; i++) {
+      for (let j = 0; j < i; j++) {
+        if (arr[i] !== arr[j]) return arr[i];
+      }
+    }
+  }
+
+
+  function findUniq(arr) {
+    if (arr[0] !== arr[1] && arr[1] === arr[2]) {return arr[0];}
+    else if (arr[0] !== arr[1] && arr[0] === arr[2]) {return arr[1];}
+    else {
+      for (let i = 0; i < arr.length; i++) {
+      for (let k = i + 1; k < arr.length; k++) {
+          if (arr[i] !== arr[k]) {
+              return arr[k];
+          }
+      }
+      }}
+    }
