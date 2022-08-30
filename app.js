@@ -87,3 +87,30 @@ function between(a, b) {
     }
     return arr;
   }
+
+
+  const flip=(d, a)=>{
+    let x = 0;
+    if (d === 'R') {
+    for (let i = 0; i < a.length; i++) {
+      for (let j = i; j < a.length; j++) {
+        if (a[j] < a[i]) {
+          x = a[j];
+          a[j] = a[i];
+          a[i] = x;
+        }
+      }
+    }}
+     else if (d === 'L') {
+    for (let i = 0; i < a.length; i++) {
+      for (let j = i; j < a.length; j++) {
+        if (a[j] > a[i]) {
+          x = a[j];
+          a[j] = a[i];
+          a[i] = x;
+        }
+      }
+    }}
+    
+    return a;
+  }
