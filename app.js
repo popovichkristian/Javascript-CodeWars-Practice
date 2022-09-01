@@ -137,3 +137,26 @@ function between(a, b) {
       }
       }}
     }
+
+
+    const arr = [3, 2, 10, 13, 22, 2];
+    function sumOfDifferences(arr) {
+      let a = 0;
+      let result = 0;
+      
+      for (let i = 0; i < arr.length; i++) {
+        for (let j = i; j < arr.length; j++) {
+          if (arr[j] > arr[i]) {
+            a = arr[j];
+            arr[j] = arr[i];
+            arr[i] = a;
+          }
+        }
+      }
+      for (let x = 1; x < arr.length; x++) {
+        result += arr[x-1] - arr[x];
+      }
+      return result;
+    }
+    
+    console.log(sumOfDifferences(arr));
